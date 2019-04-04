@@ -4,6 +4,14 @@ Library for processing and matching GPS tracks.
 
 ## Info
 
+1. Densify base lines.
+2. Build spatial index from base line's vertices
+3. Simplify input line
+4. Test input line's vertices for matching with the spatial index.
+
+
+
+-----------------------------
 1. Put base tracks into a KDTree - vertices only
 2. Create buffer arround base tracks
 3. Intersect the new track with generated buffer 

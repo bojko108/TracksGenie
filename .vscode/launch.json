@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "Test Mocha",
       "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-      "args": ["--require", "babel-core/register", "./src/**/*.test.js", "-u", "tdd", "--timeout", "999999"],
+      "args": ["--require", "babel-core/register", "./tests/**/*.test.js", "-u", "tdd", "--timeout", "999999"],
       "runtimeArgs": ["--nolazy"],
       "sourceMaps": true
     }
