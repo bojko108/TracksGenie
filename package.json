@@ -1,0 +1,38 @@
+{
+  "name": "tracksgenie",
+  "version": "1.0.0",
+  "description": "Library for processing and matching GPS tracks.",
+  "author": "bojko108 <bojko108@gmail.com>",
+  "license": "MIT",
+  "main": "./dist/tracksgenie.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bojko108/tracksgenie.git"
+  },
+  "keywords": [
+    "GPS Tracks",
+    "Track"
+  ],
+  "scripts": {
+    "patch": "npm version patch --no-git-tag-version && npm run build",
+    "minor": "npm version minor --no-git-tag-version && npm run build",
+    "major": "npm version major --no-git-tag-version && npm run build",
+    "test": "mocha --watch --require babel-core/register ./tests/**/*.test.js",
+    "build": "rollup --config ./config/build.js"
+  },
+  "dependencies": {
+    "kdbush": "^3.0.0",
+    "simplify-js": "bojko108/simplify-js"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "rollup": "^0.54.0",
+    "rollup-plugin-cleanup": "^2.0.0",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.2"
+  }
+}
